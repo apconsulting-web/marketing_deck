@@ -193,7 +193,7 @@
 
     .services-grid {
       display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap:20px; margin-top:60px;
     }
 
@@ -350,7 +350,7 @@
     #pricing { background:#070d1f; }
 
     .pricing-grid {
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      display:grid; grid-template-columns:repeat(3,1fr);
       gap:20px; margin-top:60px;
     }
 
@@ -424,6 +424,10 @@
       .detail-inner { grid-template-columns:1fr; }
       .detail-inner.rev { direction:ltr; }
       .intro-inner { flex-direction:column; }
+      .services-grid, .pricing-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:480px){
+      .services-grid, .pricing-grid { grid-template-columns:1fr; }
     }
   </style>
 </head>
@@ -520,7 +524,7 @@
   <div class="container">
     <div class="section-label">Our Services</div>
     <h2 class="section-title">Everything you need to <span>scale</span></h2>
-    <p class="section-sub">Five core services, one cohesive strategy built around your goals and your audience.</p>
+    <p class="section-sub">Six core services, one cohesive strategy built around your goals and your audience.</p>
 
     <div class="services-grid">
       <div class="svc-card">
@@ -553,6 +557,12 @@
         <div class="svc-name">Website Management</div>
         <div class="svc-desc">Ongoing optimization, maintenance, and CRO to keep you fast and converting.</div>
       </div>
+      <div class="svc-card">
+        <div class="svc-icon" style="background:rgba(108,99,255,.15);">⚙️</div>
+        <div class="svc-num">06</div>
+        <div class="svc-name">GTM Engineering</div>
+        <div class="svc-desc">Automated outbound, enrichment, and CRM systems that fill your pipeline.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -580,7 +590,7 @@
     <div class="detail-visual">
       <div class="price-tag">
         <div class="label">Monthly Investment</div>
-        <div class="amount">$1,200</div>
+        <div class="amount">$1,500</div>
         <div class="period">per month · fully managed</div>
       </div>
       <ul class="mini-list">
@@ -657,7 +667,7 @@
     <div class="detail-visual">
       <div class="price-tag">
         <div class="label">Monthly Investment</div>
-        <div class="amount">$1,100</div>
+        <div class="amount">$1,500</div>
         <div class="period">per month · setup included</div>
       </div>
       <ul class="mini-list">
@@ -695,7 +705,7 @@
     <div class="detail-visual">
       <div class="price-tag">
         <div class="label">Monthly Investment</div>
-        <div class="amount">$1,500</div>
+        <div class="amount">$2,500</div>
         <div class="period">per month · long-term compounding results</div>
       </div>
       <ul class="mini-list">
@@ -743,6 +753,44 @@
         <li><span class="mini-dot o"></span>SSL, backups & malware protection</li>
         <li><span class="mini-dot"></span>New landing page builds</li>
         <li><span class="mini-dot"></span>Monthly UX & conversion report</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SERVICE 06: GTM ENGINEERING ═══════════ -->
+<section class="svc-detail" style="background:var(--navy); padding:100px 24px;">
+  <div class="detail-inner rev">
+    <div>
+      <div class="svc-badge">&#9679; &nbsp; 06 · GTM Engineering</div>
+      <h2 class="detail-title">A revenue engine that runs while you sleep.</h2>
+      <p class="detail-desc">
+        We design and build the systems behind your go-to-market: enriched lead lists,
+        automated outbound, and a CRM that actually reflects your pipeline. Your sales
+        team spends time closing deals, not doing data entry.
+      </p>
+      <ul class="feature-list">
+        <li><span class="check">✓</span> ICP definition & targeted lead list building</li>
+        <li><span class="check">✓</span> Data enrichment with Clay, Apollo & similar tools</li>
+        <li><span class="check">✓</span> Multi-channel outbound sequences (email & LinkedIn)</li>
+        <li><span class="check orange">✓</span> CRM setup, cleanup & pipeline automation</li>
+        <li><span class="check orange">✓</span> Lead scoring & routing workflows</li>
+        <li><span class="check orange">✓</span> Pipeline & attribution reporting</li>
+      </ul>
+    </div>
+    <div class="detail-visual">
+      <div class="price-tag">
+        <div class="label">Monthly Investment</div>
+        <div class="amount">$2,000</div>
+        <div class="period">per month · systems built & managed</div>
+      </div>
+      <ul class="mini-list">
+        <li><span class="mini-dot"></span>Clay / Apollo / HubSpot workflows</li>
+        <li><span class="mini-dot"></span>Lead enrichment & verification</li>
+        <li><span class="mini-dot o"></span>Outbound campaign setup & copy</li>
+        <li><span class="mini-dot o"></span>CRM automation & integrations</li>
+        <li><span class="mini-dot"></span>Signal-based prospecting triggers</li>
+        <li><span class="mini-dot"></span>Monthly pipeline report</li>
       </ul>
     </div>
   </div>
@@ -822,7 +870,7 @@
       <div class="price-card">
         <div class="svc-icon2">🎯</div>
         <h3>Paid Ads Management</h3>
-        <div class="price-placeholder">$1,200<br/>per month</div>
+        <div class="price-placeholder">$1,500<br/>per month</div>
         <div class="incl">Google · Meta · LinkedIn<br/>+ Setup & Tracking</div>
       </div>
       <div class="price-card">
@@ -835,13 +883,13 @@
       <div class="price-card">
         <div class="svc-icon2">✉️</div>
         <h3>Email Marketing</h3>
-        <div class="price-placeholder">$1,100<br/>per month</div>
+        <div class="price-placeholder">$1,500<br/>per month</div>
         <div class="incl">Flows + Broadcasts<br/>Setup included</div>
       </div>
       <div class="price-card">
         <div class="svc-icon2">🔍</div>
         <h3>SEO</h3>
-        <div class="price-placeholder">$1,500<br/>per month</div>
+        <div class="price-placeholder">$2,500<br/>per month</div>
         <div class="incl">On-page · Content · Local<br/>Technical SEO</div>
       </div>
       <div class="price-card">
@@ -850,11 +898,17 @@
         <div class="price-placeholder">$3,100/mo · $127/hr</div>
         <div class="incl">Updates · Speed · CRO<br/>Security monitoring</div>
       </div>
+      <div class="price-card">
+        <div class="svc-icon2">⚙️</div>
+        <h3>GTM Engineering</h3>
+        <div class="price-placeholder">$2,000<br/>per month</div>
+        <div class="incl">Enrichment · Outbound<br/>CRM automation</div>
+      </div>
     </div>
 
     <div style="margin-top:40px; text-align:center; padding:32px; background:rgba(108,99,255,.08); border:1px solid rgba(108,99,255,.2); border-radius:20px;">
       <p style="font-size:.95rem; color:var(--muted);">
-        💡 &nbsp;<strong style="color:#fff;">Bundle all 5 services for $8,100/month.</strong> One partner, every channel, maximum impact.
+        💡 &nbsp;<strong style="color:#fff;">Bundle all 6 services for $11,800/month.</strong> One partner, every channel, maximum impact.
         The more channels we run together, the stronger the results and the better the value.
       </p>
     </div>
